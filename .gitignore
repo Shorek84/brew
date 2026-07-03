@@ -162,6 +162,7 @@
 !/.github
 !/completions
 !/docs
+!/site
 !/manpages
 
 # Unignore our packaging files
