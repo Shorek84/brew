@@ -84,6 +84,12 @@ You may need to install your own Ruby using your system package manager, a PPA, 
 
 Homebrew does not run at all on 32-bit x86 platforms.
 
+### Android/Termux (Tier 3 Support)
+
+Homebrew can run on Android via [Termux](https://termux.dev), but this is a [Tier 3 supported platform](https://docs.brew.sh/Support-Tiers#tier-3).
+
+[`termux-exec-package`](https://github.com/termux/termux-exec-package) >= v2.5.0 is required to avoid an `Aborted` error caused by a wrong argument count when intercepting `execve` calls (fixed in [v2.5.0](https://github.com/termux/termux-exec-package/releases/tag/v2.5.0)).
+
 ### Windows Subsystem for Linux 1 (Tier 3 Support)
 
 Due to [known issues](https://github.com/microsoft/WSL/issues/8219) with WSL 1, you may experience issues running various executables installed by Homebrew. We recommend you switch to WSL 2 instead.
